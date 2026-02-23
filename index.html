@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clément Penin — Portfolio GMP | Étudiant Ingénieur Mécanique</title>
+    <meta name="description"
+        content="Portfolio de Clément Penin, étudiant en Génie Mécanique et Productique à l'IUT Cachan. Découvrez mes projets en conception mécanique, CAO SolidWorks et impression 3D.">
+    <meta name="author" content="Clément Penin">
+    <meta name="keywords"
+        content="portfolio, GMP, génie mécanique, IUT Cachan, SolidWorks, CAO, impression 3D, étudiant ingénieur">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Clément Penin — Portfolio GMP">
+    <meta property="og:description"
+        content="Étudiant en Génie Mécanique et Productique. Découvrez mes projets et compétences.">
+    <meta property="og:url" content="https://clementpenin.fr">
+    <meta property="og:image" content="https://clementpenin.fr/photos/about/profile.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clément Penin — Portfolio GMP">
+    <meta name="twitter:description"
+        content="Étudiant en Génie Mécanique et Productique. Découvrez mes projets et compétences.">
+    <meta name="twitter:image" content="https://clementpenin.fr/photos/about/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Fixed Navigation Header -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#portfolio-hub" class="nav-link nav-portfolio" data-i18n="navPortfolio">PORTFOLIO</a>
+        </div>
+    </nav>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="loading-text" data-i18n="loading">Chargement de l'expérience</div>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loadingProgress"></div>
+            </div>
+            <div class="loading-percent" id="loadingPercent">0%</div>
+        </div>
+    </div>
+
+    <!-- Welcome Intro (shows only on first visit) -->
+    <div class="welcome-intro" id="welcomeIntro">
+        <div class="welcome-content">
+            <span class="welcome-text" data-i18n="welcome">Bienvenue</span>
+            <span class="welcome-subtext" data-i18n="scrollExplore">Scroll pour explorer</span>
+            <svg class="welcome-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5v10M12 15l-3-3m3 3l3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="heroTitle">PENIN Clément</h1>
+            <h2 class="hero-subtitle" data-i18n="heroSubtitle">Bienvenue sur mon portfolio !</h2>
+            <p class="hero-description" data-i18n="heroDesc">Actuellement en deuxième année d'IUT Génie Mécanique et
+                Productique à Cachan,
+                rattaché à l'Université Paris-Saclay, je vous invite à découvrir mes projets et compétences à travers
+                mon portfolio.</p>
+        </div>
+    </section>
+
+    <!-- Canvas Scroll Section -->
+    <section class="canvas-section">
+        <canvas id="scrollCanvas"></canvas>
+
+        <!-- Beat A: Introduction -->
+        <div class="text-overlay beat-a" id="beatA">
+            <div class="text-content">
+                <h2 data-i18n="beatA_Title">Scrollez pour découvrir</h2>
+                <p data-i18n="beatA_Desc">Une expérience immersive construite avec des technologies web natives. HTML,
+                    CSS, JavaScript — sans framework, pur artisanat.</p>
+            </div>
+        </div>
+
+        <!-- Beat B: Technical Skills -->
+        <div class="text-overlay beat-b" id="beatB">
+            <div class="text-content text-left">
+                <h2 data-i18n="beatB_Title">Précision & Performance</h2>
+                <p data-i18n="beatB_Desc">Chaque image rendue à 60fps. Mélange fluide du canvas avec une logique de
+                    défilement pilotée par les mathématiques, pas par des librairies.</p>
+            </div>
+        </div>
+
+        <!-- Beat C: Motion & Interaction -->
+        <div class="text-overlay beat-c" id="beatC">
+            <div class="text-content text-right">
+                <h2 data-i18n="beatC_Title">Le Mouvement comme Média</h2>
+                <p data-i18n="beatC_Desc">Le scroll n'est pas une interaction — c'est une narration. Les images se
+                    transforment, le texte apparaît, l'espace respire. Une narration visuelle pure.</p>
+            </div>
+        </div>
+
+        <!-- Beat D: Call to Action -->
+        <div class="text-overlay beat-d" id="beatD">
+            <div class="text-content text-center">
+                <h2 data-i18n="beatD_Title">Créons Ensemble</h2>
+                <p data-i18n="beatD_Desc">Explorez mon travail. Voyez le savoir-faire. Ressentez l'attention portée aux
+                    détails.</p>
+                <a href="#portfolio-hub" class="cta-button" data-i18n="beatD_Btn">Voir le Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Navigation Grid -->
+    <div class="portfolio-hub" id="portfolio-hub">
+        <h2 class="hub-title" data-i18n="hubTitle">Explorez mon univers</h2>
+        <div class="hub-grid">
+            <a href="about.html" class="hub-card">
+                <span class="card-number">01</span>
+                <h3 data-i18n="cardAbout_Title">À Propos</h3>
+                <p data-i18n="cardAbout_Desc">Qui suis-je ? Mon parcours et mon CV.</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="skills.html" class="hub-card">
+                <span class="card-number">02</span>
+                <h3 data-i18n="cardSkills_Title">Compétences</h3>
+                <p data-i18n="cardSkills_Desc">Savoir-faire technique et soft skills.</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="experience.html" class="hub-card">
+                <span class="card-number">03</span>
+                <h3 data-i18n="cardExp_Title">Expériences</h3>
+                <p data-i18n="cardExp_Desc">Mon parcours professionnel.</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="projects.html" class="hub-card">
+                <span class="card-number">04</span>
+                <h3 data-i18n="cardProjects_Title">Projets</h3>
+                <p data-i18n="cardProjects_Desc">Mes réalisations académiques et personnelles.</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="interests.html" class="hub-card">
+                <span class="card-number">05</span>
+                <h3 data-i18n="cardInterests_Title">Centres d'intérêt</h3>
+                <p data-i18n="cardInterests_Desc">Ce qui me passionne en dehors du travail.</p>
+                <div class="card-arrow">→</div>
+            </a>
+
+            <a href="personal-projects.html" class="hub-card">
+                <span class="card-number">06</span>
+                <h3 data-i18n="cardPersonal_Title">Projets Personnels</h3>
+                <p data-i18n="cardPersonal_Desc">Mes projets de conception personnels.</p>
+                <div class="card-arrow">→</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Gradient Divider -->
+    <div class="gradient-divider"></div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 data-i18n="contactTitle">Me Contacter</h2>
+            <p data-i18n="contactDesc">Je suis toujours à la recherche de nouvelles opportunités.</p>
+            <div class="contact-links">
+                <a href="mailto:penin.clement@hotmail.com" class="contact-link">penin.clement@hotmail.com</a>
+                <a href="tel:0647419361" class="contact-link">06 47 41 93 61</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-content">
+            <p data-i18n="footerText">&copy; Conçu et développé par Clément Penin — 2026</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/clement-penin/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:penin.clement@hotmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal Pop-up -->
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-overlay" id="contactModalOverlay"></div>
+        <div class="contact-modal-content">
+            <button class="contact-modal-close" id="contactModalClose" aria-label="Fermer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="contact-modal-header">
+                <h2 data-i18n="modalContactTitle">Me Contacter</h2>
+                <p data-i18n="modalContactSubtitle">Décrivez votre projet ou votre demande</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName" data-i18n="formLabelName">Nom complet *</label>
+                        <input type="text" id="contactName" name="name" required
+                            data-i18n-placeholder="formPlaceholderName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail" data-i18n="formLabelEmail">Adresse Email *</label>
+                        <input type="email" id="contactEmail" name="email" required
+                            data-i18n-placeholder="formPlaceholderEmail">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactPhone" data-i18n="formLabelPhone">Téléphone *</label>
+                        <input type="tel" id="contactPhone" name="phone" required
+                            data-i18n-placeholder="formPlaceholderPhone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactCompany" data-i18n="formLabelCompany">Entreprise / École</label>
+                        <input type="text" id="contactCompany" name="company"
+                            data-i18n-placeholder="formPlaceholderCompany">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject" data-i18n="formLabelSubject">Objet de la demande *</label>
+                    <div class="custom-select" id="customSelect">
+                        <div class="custom-select-trigger" id="customSelectTrigger">
+                            <span class="custom-select-value" data-i18n="formOptionSelect">Sélectionnez une
+                                option</span>
+                            <svg class="custom-select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="custom-select-options" id="customSelectOptions">
+                            <div class="custom-option" data-value="project" data-i18n="formOptionProject">Projet</div>
+                            <div class="custom-option" data-value="internship" data-i18n="formOptionInternship">Stage
+                            </div>
+                            <div class="custom-option" data-value="alternance" data-i18n="formOptionAlternance">
+                                Alternance</div>
+                            <div class="custom-option" data-value="other" data-i18n="formOptionOther">Autre</div>
+                        </div>
+                        <input type="hidden" name="subject" id="contactSubject" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage" data-i18n="formLabelMessage">Message *</label>
+                    <textarea id="contactMessage" name="message" rows="5" required
+                        data-i18n-placeholder="formPlaceholderMessage"></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">
+                    <span data-i18n="formButtonSubmit">Envoyer</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Clément Penin",
+        "url": "https://clementpenin.fr",
+        "jobTitle": "Étudiant en Génie Mécanique et Productique",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "IUT Cachan - Université Paris-Saclay"
+        },
+        "knowsAbout": ["CAO", "SolidWorks", "Conception mécanique", "Impression 3D"],
+        "sameAs": ["https://www.linkedin.com/in/clement-penin/"]
+    }
+    </script>
+
+    <script src="translations.js"></script>
+    <script src="language-manager.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
