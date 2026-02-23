@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Clement Penin</title>
+    <meta name="description"
+        content="Projets académiques et personnels de Clément Penin : SAÉ IUT, bureau d'études, moulage cire perdue, impression 3D et conception mécanique.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="sub-page">
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn nav-btn-home" aria-label="Accueil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                <path d="m8 3.293 6 6V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V9.293l6-6Z" />
+            </svg>
+        </a>
+        <a href="index.html#portfolio-hub" class="nav-btn" data-i18n="navBack">← Retour</a>
+    </div>
+
+    <div class="page-container">
+        <section class="portfolio-section" id="projects">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title" data-i18n="pageProjectsTitle">Mes Projets</h2>
+            </div>
+
+            <!-- Category Selection Cards -->
+            <div class="category-selection">
+                <div class="category-folder" data-target="iut-content">
+                    <div class="folder-icon">📁</div>
+                    <h3 data-i18n="catFolderIUT">Projet IUT</h3>
+                    <p data-i18n="catFolderIUTDesc">SAÉ, Production, Bureau d'études</p>
+                </div>
+                <div class="category-folder" data-target="innovation-content">
+                    <div class="folder-icon">📁</div>
+                    <h3 data-i18n="catFolderInn">Projet Spécialité Innovation</h3>
+                    <p data-i18n="catFolderInnDesc">Bureau d'études</p>
+                </div>
+            </div>
+
+            <!-- ========== PROJET IUT (Hidden by default) ========== -->
+            <div class="project-category hidden" id="iut-content">
+                <div class="category-header">
+                    <button class="back-to-selection" data-i18n="backToFolders">← Retour aux dossiers</button>
+                    <h3 class="category-title" data-i18n="catFolderIUT">Projet IUT</h3>
+                </div>
+
+                <!-- SAÉ -->
+                <div class="project-subcategory">
+                    <h4 class="subcategory-title" data-i18n="subTitleSAE">SAÉ</h4>
+                    <div class="projects-grid">
+                        <a href="docs/projects iut/PALONNIERS.pdf" target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projPalonnier">Attelage de palonnier</h3>
+                                <span class="project-type">SAÉ 1.2</span>
+                                <p data-i18n="projPalonnierDesc">Création complète d'un attelage. Calculs de
+                                    dimensionnement (SDM), conception CAO sur
+                                    SolidWorks.</p>
+                            </div>
+                        </a>
+                        <a href="docs/projects iut/opi.pdf" target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projImplantation">Implantation Atelier</h3>
+                                <span class="project-type">SAÉ 2.4</span>
+                                <p data-i18n="projImplantationDesc">Optimisation d'un atelier de tôlerie. Regroupement
+                                    par sections homogènes pour 19
+                                    produits et 14 machines.</p>
+                            </div>
+                        </a>
+                        <a href="docs/projects iut/Saé 2.23.pdf" target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projFusible">Pièce Fusible Casque</h3>
+                                <span class="project-type">SAÉ 2.23</span>
+                                <p data-i18n="projFusibleDesc">Conception d'une pièce de sécurité devant céder entre 150
+                                    et 250 N. Calculs SDM et
+                                    DDS.</p>
+                            </div>
+                        </a>
+                        <a href="docs/projects iut/flip book.pdf" target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projFlipbook">Flipbook Mécanique</h3>
+                                <span class="project-type">SAÉ</span>
+                                <p data-i18n="projFlipbookDesc">Travail d'équipe sur le thème "l'amour et les moyens de
+                                    transport". Conception de la
+                                    mécanique d'animation.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Production -->
+                <div class="project-subcategory">
+                    <h4 class="subcategory-title" data-i18n="subTitleProd">Production</h4>
+                    <div class="projects-grid">
+                        <a href="project-moulage.html" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projMoulage">Moulage cire perdue</h3>
+                                <span class="project-type">PROD</span>
+                                <p data-i18n="projMoulageDesc">Moulage à la cire perdue</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bureau d'études -->
+                <div class="project-subcategory">
+                    <h4 class="subcategory-title" data-i18n="subTitleBE">Bureau d'études</h4>
+                    <div class="projects-grid">
+                        <a href="docs/projects iut/be1.pdf" target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projBE1">Bureau d'études 1</h3>
+                                <span class="project-type">BE1</span>
+                                <p data-i18n="projBE1Desc">Premier projet de bureau d'études.</p>
+                            </div>
+                        </a>
+                        <a href="docs/projects iut/be3.pdf" target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projEnduire">Machine à enduire</h3>
+                                <span class="project-type">BE3</span>
+                                <p data-i18n="projEnduireDesc">Conception et mise en plan d'un appareil pour enduire des
+                                    disques échantillons.
+                                    Dimensionnement courroie et pièces mécaniques.</p>
+                            </div>
+                        </a>
+                        <a href="docs/projects iut/MACHINE à SOUDER par FRICTION1.pdf" target="_blank"
+                            class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projFriction">Machine à souder par friction</h3>
+                                <span class="project-type">BE</span>
+                                <p data-i18n="projFrictionDesc">Étude et conception d'une machine de soudage par
+                                    friction.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== PROJET SPÉCIALITÉ INNOVATION (Hidden by default) ========== -->
+            <div class="project-category hidden" id="innovation-content">
+                <div class="category-header">
+                    <button class="back-to-selection" data-i18n="backToFolders">← Retour aux dossiers</button>
+                    <h3 class="category-title" data-i18n="titleInn">Projet Spécialité Innovation pour l'industrie</h3>
+                </div>
+
+                <!-- Bureau d'études -->
+                <div class="project-subcategory">
+                    <h4 class="subcategory-title" data-i18n="subTitleBE">Bureau d'études</h4>
+                    <div class="projects-grid">
+                        <a href="docs/Projet Spécialité Innovation pour l'industrie/BE2 HYDROGENERATEUR.pdf"
+                            target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projHydro">Hydrogénérateur</h3>
+                                <span class="project-type">BE2</span>
+                                <p data-i18n="projHydroDesc">Conception et étude d'un hydrogénérateur.</p>
+                            </div>
+                        </a>
+                        <a href="docs/Projet Spécialité Innovation pour l'industrie/Conception d'outillage de moulage.pdf"
+                            target="_blank" class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projOutillage">Outillage de moulage</h3>
+                                <span class="project-type">Conception</span>
+                                <p data-i18n="projOutillageDesc">Conception d'outillage de moulage industriel.</p>
+                            </div>
+                        </a>
+                        <a href="docs/Projet Spécialité Innovation pour l'industrie/PROTO-2D.pdf" target="_blank"
+                            class="project-card">
+                            <div class="project-info">
+                                <h3 data-i18n="projProto">Proto 2D</h3>
+                                <span class="project-type">Prototypage</span>
+                                <p data-i18n="projProtoDesc">Projet de prototypage 2D.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Gradient Divider -->
+    <div class="gradient-divider"></div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-content">
+            <p data-i18n="footerText">&copy; Conçu et développé par Clément Penin — 2026</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/clement-penin/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:penin.clement@hotmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="translations.js"></script>
+    <script src="language-manager.js"></script>
+    <script src="waves.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Category folder toggle logic
+        document.querySelectorAll('.category-folder').forEach(folder => {
+            folder.addEventListener('click', () => {
+                const targetId = folder.dataset.target;
+                const target = document.getElementById(targetId);
+
+                // Hide selection grid
+                document.querySelector('.category-selection').classList.add('hidden');
+
+                // Show target content
+                target.classList.remove('hidden');
+            });
+        });
+
+        // Back to selection buttons
+        document.querySelectorAll('.back-to-selection').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Hide all category content
+                document.querySelectorAll('.project-category').forEach(cat => {
+                    cat.classList.add('hidden');
+                });
+
+                // Show selection grid
+                document.querySelector('.category-selection').classList.remove('hidden');
+            });
+        });
+    </script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+</body>
+
+</html>

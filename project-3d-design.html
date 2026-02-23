@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impression 3D / Conception — Clement Penin</title>
+    <meta name="description"
+        content="Projet d'impression 3D et de conception de Clément Penin : modélisation CAO et fabrication.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="sub-page">
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn nav-btn-home" aria-label="Accueil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                <path d="m8 3.293 6 6V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V9.293l6-6Z" />
+            </svg>
+        </a>
+        <a href="personal-projects.html" class="nav-btn" data-i18n="navBack">← Retour</a>
+        <a href="index.html#portfolio-hub" class="nav-btn" data-i18n="navBackToHub">Retour aux sélections</a>
+    </div>
+
+    <div class="page-container">
+        <section class="portfolio-section" id="3d-design">
+            <div class="section-header">
+                <span class="project-subtitle" data-i18n="proj3DSubtitle">Projet Personnel</span>
+                <h2 class="section-title" data-i18n="proj3DPageTitle">Impression 3D / Conception</h2>
+            </div>
+
+            <!-- Section 1 (Text Left, Image Right) -->
+            <div class="split-section">
+                <div class="split-text">
+                    <h3 data-i18n="proj3DSection1Title">Aperçu du Projet</h3>
+                    <p data-i18n="proj3DSection1Desc">Place pour la description de la section 1. Décrivez ici votre
+                        projet d'impression 3D.</p>
+                </div>
+                <div class="split-image">
+                    <img src="photos/3d_design/img1.jpg" alt="3D Design 1" class="project-detail-img"
+                        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'image-placeholder\'><p>Drop img1.jpg here</p></div>'">
+                </div>
+            </div>
+
+            <!-- Section 2 (Image Left, Text Right) -->
+            <div class="split-section reverse">
+                <div class="split-image">
+                    <img src="photos/imprimente 3d/img1.jpg" alt="Imprimante 3D Bambu Lab A1"
+                        class="project-detail-img">
+                </div>
+                <div class="split-text">
+                    <h3 data-i18n="proj3DPrinterTitle">Mon Équipement</h3>
+                    <p data-i18n="proj3DPrinterDesc">Voici l'imprimante 3D que j'utilise, c'est la A1 de chez Bambulab.
+                        Cette machine offre une excellente vitesse et qualité d'impression, me permettant de réaliser
+                        des pièces complexes avec précision.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Gradient Divider -->
+    <div class="gradient-divider"></div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-content">
+            <p data-i18n="footerText">&copy; Conçu et développé par Clément Penin — 2026</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/clement-penin/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:penin.clement@hotmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="translations.js"></script>
+    <script src="language-manager.js"></script>
+    <script src="waves.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+</body>
+
+</html>

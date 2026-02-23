@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets Personnels — Clement Penin</title>
+    <meta name="description"
+        content="Projets personnels de Clément Penin : photographie solaire, impression 3D, conception mécanique et développement web.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="sub-page">
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn nav-btn-home" aria-label="Accueil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                <path d="m8 3.293 6 6V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V9.293l6-6Z" />
+            </svg>
+        </a>
+        <a href="index.html#portfolio-hub" class="nav-btn" data-i18n="navBack">← Retour</a>
+    </div>
+
+    <div class="page-container">
+        <section class="portfolio-section" id="personal-projects">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title" data-i18n="pagePersonalTitle">Projets Personnels</h2>
+            </div>
+
+            <div class="projects-grid">
+                <a href="project-photo-solaire.html" class="project-card">
+                    <div class="project-info">
+                        <h3 data-i18n="projPhotoSolaire">Projet photo solaire</h3>
+                        <span class="project-type" data-i18n="projPhotoSolaireType">Projet de conception
+                            d'outillage</span>
+                        <p data-i18n="projPhotoSolaireDesc">pour équipement photo pour prendre en photo le ciel
+                            (étoiles, lune, etc.).</p>
+                    </div>
+                </a>
+
+                <a href="project-3d-design.html" class="project-card">
+                    <div class="project-info">
+                        <h3 data-i18n="proj3D">Impression 3D / Conception</h3>
+                        <span class="project-type" data-i18n="proj3DType">Projet personnel</span>
+                        <p data-i18n="proj3DDesc">Conception et impression 3D.</p>
+                    </div>
+                </a>
+
+                <a href="project-codage.html" class="project-card">
+                    <div class="project-info">
+                        <h3 data-i18n="projCoding">Codage</h3>
+                        <span class="project-type" data-i18n="projCodingType">Projet personnel</span>
+                        <p data-i18n="projCodingDesc">Projets de programmation divers.</p>
+                    </div>
+                </a>
+
+                <div class="project-card placeholder-card">
+                    <div class="project-info">
+                        <h3 data-i18n="projDesign">Design / Web / Application</h3>
+                        <span class="project-type" data-i18n="projDesignType">Projet personnel</span>
+                        <p data-i18n="projDesignDesc">Création d'interfaces et développement web.</p>
+                        <span
+                            style="display: inline-block; margin-top: 12px; font-size: 12px; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1px;">Bientôt
+                            disponible</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Gradient Divider -->
+    <div class="gradient-divider"></div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-content">
+            <p data-i18n="footerText">&copy; Conçu et développé par Clément Penin — 2026</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/clement-penin/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:penin.clement@hotmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="translations.js"></script>
+    <script src="language-manager.js"></script>
+    <script src="waves.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+</body>
+
+</html>

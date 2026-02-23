@@ -1,0 +1,31 @@
+{
+  "name": "creative-portfolio-scrollytelling",
+  "version": "1.0.0",
+  "description": "Premium scrollytelling portfolio built with HTML5, CSS3, and Vanilla JavaScript",
+  "main": "serve.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node serve.js",
+    "serve": "npx http-server -p 8080 -c-1",
+    "dev": "node serve.js"
+  },
+  "keywords": [
+    "portfolio",
+    "scrollytelling",
+    "animation",
+    "html5",
+    "css3",
+    "javascript",
+    "canvas",
+    "creative"
+  ],
+  "author": "Creative Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/creative-portfolio.git"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
